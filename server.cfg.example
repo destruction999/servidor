@@ -1,0 +1,74 @@
+# ZENTRIKA RP - EJEMPLO TXADMIN / FXSERVER
+# Completa los valores marcados antes de iniciar.
+
+sv_hostname "ZENTRIKA RP | Roleplay"
+sets sv_projectName "ZENTRIKA RP"
+sets sv_projectDesc "Servidor ESX Legacy"
+sets locale "es-MX"
+sv_maxclients 48
+
+# OBLIGATORIO: agrega tu clave real de Cfx.re de forma privada
+# sv_licenseKey "PON_AQUI_TU_CFX_KEY"
+
+# OBLIGATORIO: cadena real de oxmysql
+# set mysql_connection_string "mysql://USUARIO:CONTRASENA@HOST/zentirka_rp?charset=utf8mb4"
+
+ensure chat
+ensure oxmysql
+ensure ox_lib
+ensure ox_target
+ensure es_extended
+ensure ox_inventory
+
+ensure cron
+ensure esx_context
+ensure esx_menu_default
+ensure esx_menu_dialog
+ensure esx_menu_list
+ensure esx_notify
+ensure esx_progressbar
+ensure esx_textui
+ensure esx_identity
+ensure esx_lib
+
+ensure solid-bridge
+ensure solid-multichar
+ensure pure_appearance
+ensure pure_clothing
+
+ensure esx_addonaccount
+ensure esx_addoninventory
+ensure esx_datastore
+ensure esx_society
+ensure esx_banking
+ensure esx_billing
+ensure esx_status
+ensure esx_basicneeds
+ensure esx_ambulancejob
+ensure esx_license
+ensure esx_garage
+ensure esx_vehicleshop
+ensure esx_shops
+ensure esx_weaponshop
+ensure esx_dmvschool
+ensure esx_adminmenu
+
+# Policia FRKN/D7. No iniciar esx_policejob simultaneamente.
+ensure frkn-policejob
+ensure frkn-bodycam
+ensure frkn-bodycam-render
+ensure frkn-gps
+ensure frkn-radio
+ensure d7_police_suite
+ensure BabloBossMenu
+
+ensure pma-voice
+
+# Activa estos grupos solo despues de revisar sus dependencias y SQL:
+# ensure [standalone]
+# ensure [tiendas]
+# ensure [trabajos]
+# ensure [interfaz]
+
+# Agrega tus permisos ACE e identificadores de administrador de forma privada.
+# Nunca publiques claves, contrasenas ni webhooks.
