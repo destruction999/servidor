@@ -83,6 +83,7 @@ ensure frkn-bodycam-render
 ensure frkn-gps
 ensure frkn-radio
 ensure d7_police_suite
+ensure PoliceSimulatorV
 ensure BabloBossMenu
 
 ensure pma-voice
