@@ -52,6 +52,29 @@ ensure esx_shops
 ensure esx_weaponshop
 ensure esx_dmvschool
 ensure esx_adminmenu
+ensure esx_animations
+ensure esx_cruisecontrol
+ensure esx_hud
+ensure esx_lscustom
+ensure esx_pausemenu
+ensure esx_property
+ensure esx_rpchat
+ensure esx_scoreboard
+ensure esx_service
+ensure esx_weather
+
+# Librerias y recursos independientes
+ensure cfxlua-require
+ensure koja-lib
+ensure bob74_ipl
+
+# Tiendas, trabajos e interfaz del paquete
+ensure dc_builder
+ensure dc_fuel
+ensure dc_shops
+ensure zentirka_jobmanager
+ensure pls_mechanic
+ensure tdev_loadingscreen
 
 # Policia FRKN/D7. No iniciar esx_policejob simultaneamente.
 ensure frkn-policejob
@@ -64,11 +87,7 @@ ensure BabloBossMenu
 
 ensure pma-voice
 
-# Activa estos grupos solo despues de revisar sus dependencias y SQL:
-# ensure [standalone]
-# ensure [tiendas]
-# ensure [trabajos]
-# ensure [interfaz]
+# No uses ensure [esx_addons] porque iniciaria tambien esx_policejob, que se omite por conflicto con FRKN.
 
 # Agrega tus permisos ACE e identificadores de administrador de forma privada.
 # Nunca publiques claves, contrasenas ni webhooks.
